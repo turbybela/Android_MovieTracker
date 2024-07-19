@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#4CAF50"
+    android:orientation="horizontal"
+    android:padding="0dp">
+
+    <TextView
+        android:id="@+id/entryName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_weight="10"
+        android:padding="0dp"
+        android:text="_placeholder_"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/SeasonCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="3dp"
+        android:layout_weight="1"
+        android:gravity="end"
+        android:padding="0dp"
+        android:text="Sx"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/SeasonIncrement"
+        android:layout_width="35dp"
+        android:layout_height="wrap_content"
+        android:padding="0dp"
+        android:text="+" />
+
+    <Button
+        android:id="@+id/SeasonDecrement"
+        android:layout_width="35dp"
+        android:layout_height="wrap_content"
+        android:padding="0dp"
+        android:text="-" />
+
+    <TextView
+        android:id="@+id/EpisodeCount"
+        android:gravity="end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="0dp"
+        android:layout_marginEnd="3dp"
+        android:text="Epx"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/EpisodeIncrement"
+        android:layout_width="35dp"
+        android:layout_height="wrap_content"
+        android:padding="0dp"
+        android:text="+" />
+
+    <Button
+        android:id="@+id/EpisodeDecrement"
+        android:layout_width="35dp"
+        android:layout_height="wrap_content"
+        android:padding="0dp"
+        android:text="-"
+        android:layout_marginEnd="10dp"/>
+
+    <ImageButton
+        android:id="@+id/Visibility"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_margin="5dp"
+        android:layout_marginEnd="10dp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Visibility Toggle"
+        android:src="@drawable/eye_open" />
+
+    <ImageButton
+        android:id="@+id/DeleteEntry"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_margin="5dp"
+        android:layout_marginEnd="10dp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Delete Entry"
+        android:src="@drawable/trash" />
+
+</LinearLayout>
